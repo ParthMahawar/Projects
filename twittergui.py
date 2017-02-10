@@ -3,6 +3,7 @@ import jsonpickle
 from Tkinter import *
 
 root = Tk()
+root.geometry('1200x600')
 
 def searchtwitter(query, tweetcount):
 
@@ -47,9 +48,9 @@ def searchtwitter(query, tweetcount):
 
 	#print tweetlist
 	#print len(tweets)
-	print '--------------------------------------------------------------'
-	print counter, 'Tweets Found'
-	print '--------------------------------------------------------------'
+	#print '--------------------------------------------------------------'
+	#print counter, 'Tweets Found'
+	#print '--------------------------------------------------------------'
 
 	wordlist = []
 
@@ -92,10 +93,68 @@ def searchtwitter(query, tweetcount):
 			pass
 	scores = iterlst[:]
 	iterlst = []
+	finallist = []
+	finalstr =''
+
+
+	for tweet in tweetlist:
+		finallist.append(tweet[9:])
+
+	finallist.append('-------------------------------------------------------------------------')
+	finallist.append(str(counter) + ' Tweets Found')
+	finallist.append('-------------------------------------------------------------------------')
 
 	for score in scores:
 		for key, val in wordscores.iteritems():
 			if val == score:
 				iterlst.append(key)
-		print iterlst, '-', score
+		finallist.append(str(iterlst) + ' - ' + str(score))
 		iterlst = []
+
+	for thing in finallist:
+		finalstr += thing + '\n'
+
+	return finalstr
+
+def thirdstep():
+	output = Text(root, height = 100, width = 147, wrap = WORD)
+	output.pack(side = LEFT, fill = Y)
+	scroller = Scrollbar(root)
+	scroller.pack(side = RIGHT, fill = Y)
+	scroller.config(command = output.yview)
+	output.config(yscrollcommand = scroller.set)
+	output.insert(END, searchtwitter(text, num))
+
+def addcount():
+	global num
+	num = box.get()
+	label.destroy()
+	box.destroy()
+	sub.destroy()
+	thirdstep()
+
+def nextstep():
+	global box
+	global label
+	global sub
+
+	label = Label(root, text = 'Number of tweets to search')
+	label.pack()
+	box = Entry(root, width = 20)
+	sub = Button(root, width = 20, text = 'Submit', command = addcount)
+	box.pack()
+	sub.pack()
+
+def addquery():
+	global text
+	text = box.get()
+	print text
+	box.destroy()
+	sub.destroy()
+	nextstep()
+
+box = Entry(root, width = 24)
+sub = Button(root, width = 20, text = 'Submit Query', command = addquery)
+box.pack()
+sub.pack()
+root.mainloop()
