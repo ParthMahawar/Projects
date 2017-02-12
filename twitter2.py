@@ -1,6 +1,9 @@
 import tweepy
 import jsonpickle
+from wordcloud import WordCloud, STOPWORDS
+import matplotlib.pyplot as plot
 
+endstring = ''
 query = raw_input('Search: ')
 tweetcount = raw_input('Number of tweets to search (max 100): ')
 
@@ -56,6 +59,14 @@ for tweet in tweetlist:
 	for word in words:
 		wordlist.append(word)
 
+for word in wordlist:
+	if word != '''"text":''':
+		endstring += word + ' '
+
+endstring.strip()
+#cloud = WordCloud(font_path = 'C:\\Windows\\Fonts\\micross.ttf').generate(endstring)
+cloud = WordCloud().generate(endstring)
+
 #print wordlist
 #print len(tweets)
 #print counter
@@ -97,3 +108,8 @@ for score in scores:
 			iterlst.append(key)
 	print iterlst, '-', score
 	iterlst = []
+
+plot.figure()
+plot.imshow(cloud)
+plot.axis('off')
+plot.show()

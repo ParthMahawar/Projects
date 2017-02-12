@@ -1,6 +1,8 @@
 import tweepy
 import jsonpickle
 from Tkinter import *
+from wordcloud import WordCloud
+import matplotlib.pyplot as plot
 
 root = Tk()
 root.geometry('1200x600')
@@ -59,6 +61,14 @@ def searchtwitter(query, tweetcount):
 		for word in words:
 			wordlist.append(word)
 
+	cloudstr = ''
+
+	for word in wordlist:
+		if word != '''"text":''':
+			cloudstr += word + ' '
+
+	cloudstr.strip()
+
 	#print wordlist
 	#print len(tweets)
 	#print counter
@@ -114,16 +124,30 @@ def searchtwitter(query, tweetcount):
 	for thing in finallist:
 		finalstr += thing + '\n'
 
-	return finalstr
+	endlst = [finalstr, cloudstr]
 
+	return endlst
+def cloudgen():
+	cloud = WordCloud().generate(var[1])
+	plot.figure()
+	plot.imshow(cloud)
+	plot.axis('off')
+	plot.show()
 def thirdstep():
+	global var
+	global output
+	global scroller
+	global cloudbutton
+	var = searchtwitter(text, num)
 	output = Text(root, height = 100, width = 147, wrap = WORD)
 	output.pack(side = LEFT, fill = Y)
 	scroller = Scrollbar(root)
 	scroller.pack(side = RIGHT, fill = Y)
+	cloudbutton = Button(root, width = 147, command = cloudgen)
+	cloudbutton.pack(side = LEFT)
 	scroller.config(command = output.yview)
 	output.config(yscrollcommand = scroller.set)
-	output.insert(END, searchtwitter(text, num))
+	output.insert(END, var[0])
 
 def addcount():
 	global num
