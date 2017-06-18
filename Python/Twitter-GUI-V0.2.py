@@ -1,6 +1,6 @@
 import tweepy
 import jsonpickle
-from Tkinter import *
+from tkinter import *
 from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plot
 
@@ -17,10 +17,10 @@ def searchtwitter(query, tweetcount):
 	try:
 		redirect_url = auth.get_authorization_url()
 	except tweepy.TweepError:
-		print "'Error: Can't obtain request token."
+		print("'Error: Can't obtain request token.")
 
-	ATKN = '827929258685243393-D2Hg4UPQaGHPHnmfOvNn55qxF25AhVN'
-	ASCRT = 'fMD5e3GLH3KLaBWftMr9ZvtQnwKLb7neHN8ksmYdAV0DE'
+	#ATKN = '827929258685243393-D2Hg4UPQaGHPHnmfOvNn55qxF25AhVN'
+	#ASCRT = 'fMD5e3GLH3KLaBWftMr9ZvtQnwKLb7neHN8ksmYdAV0DE'
 
 	api = tweepy.API(auth)
 
@@ -43,9 +43,9 @@ def searchtwitter(query, tweetcount):
 			counter += 1
 			
 			if i.endswith('''"'''):
-				i = i [:-1]
+				i = i[:-1]
 			
-			print counter, ':', i[9:]
+			print(counter, ':', i[9:])
 			tweetlist.append(i)
 
 	#print tweetlist
@@ -89,7 +89,7 @@ def searchtwitter(query, tweetcount):
 
 	scores = []
 
-	for key,val in wordscores.iteritems():
+	for key,val in wordscores.items():
 		scores.append(val)
 
 	scores.sort()
@@ -115,7 +115,7 @@ def searchtwitter(query, tweetcount):
 	finallist.append('-------------------------------------------------------------------------')
 
 	for score in scores:
-		for key, val in wordscores.iteritems():
+		for key, val in wordscores.items():
 			if val == score:
 				iterlst.append(key)
 		finallist.append(str(iterlst) + ' - ' + str(score))
@@ -174,7 +174,7 @@ def nextstep():
 def addquery():
 	global text
 	text = box.get()
-	print text
+	print(text)
 	box.destroy()
 	sub.destroy()
 	nextstep()

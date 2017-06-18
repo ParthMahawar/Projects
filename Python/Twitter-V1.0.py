@@ -4,8 +4,8 @@ from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plot
 
 endstring = ''
-query = raw_input('Search: ')
-tweetcount = raw_input('Number of tweets to search (max 100): ')
+query = input('Search: ')
+tweetcount = input('Number of tweets to search (max 100): ')
 
 counter = 0
 CKEY = '8l9rpQ2EgpXFS0T8nkOljzZvM'
@@ -15,10 +15,10 @@ auth = tweepy.OAuthHandler(CKEY, CSCRT)
 try:
 	redirect_url = auth.get_authorization_url()
 except tweepy.TweepError:
-	print "'Error: Can't obtain request token."
+	print("'Error: Can't obtain request token.")
 
-ATKN = '827929258685243393-D2Hg4UPQaGHPHnmfOvNn55qxF25AhVN'
-ASCRT = 'fMD5e3GLH3KLaBWftMr9ZvtQnwKLb7neHN8ksmYdAV0DE'
+#ATKN = '827929258685243393-D2Hg4UPQaGHPHnmfOvNn55qxF25AhVN'
+#ASCRT = 'fMD5e3GLH3KLaBWftMr9ZvtQnwKLb7neHN8ksmYdAV0DE'
 
 api = tweepy.API(auth)
 
@@ -43,14 +43,14 @@ for i in split:
 		if i.endswith('''"'''):
 			i = i [:-1]
 		
-		print counter, ':', i[9:]
+		print(counter, ':', i[9:])
 		tweetlist.append(i)
 
 #print tweetlist
 #print len(tweets)
-print '--------------------------------------------------------------'
-print counter, 'Tweets Found'
-print '--------------------------------------------------------------'
+print ('--------------------------------------------------------------')
+print (counter, 'Tweets Found')
+print ('--------------------------------------------------------------')
 
 wordlist = []
 
@@ -87,7 +87,7 @@ for word in wordlist:
 
 scores = []
 
-for key,val in wordscores.iteritems():
+for key,val in wordscores.items():
 	scores.append(val)
 
 scores.sort()
@@ -103,10 +103,10 @@ scores = iterlst[:]
 iterlst = []
 
 for score in scores:
-	for key, val in wordscores.iteritems():
+	for key, val in wordscores.items():
 		if val == score:
 			iterlst.append(key)
-	print iterlst, '-', score
+	print(iterlst, '-', score)
 	iterlst = []
 
 plot.figure()

@@ -1,0 +1,55 @@
+In October, Apple appeared to confirm that it'd stop updating its MacBook Air line, concentrating instead on its MacBook Pro line. The Air is still on sale, though, which means comparing the two is more important than ever.
+
+Instead, there’s a couple of versions of new MacBook Pro and Apple will keep on selling the older MacBook Air.
+
+With Windows laptops getting better all the time – notably the Surface Book and Dell’s XPS 13 – Apple’s portables have felt stale for a long time. Yes, we’ve had the smaller 12-inch MacBook, but little else and frankly who can survive with just one port?
+
+But what’s new? And which is right for you? Let’s take a look and see.
+
+It has been leaked heavily in the run up to the event, but one of the fanciest features Apple showed off was a new touch sensitive Retina strip that replaces the function keys and sits just below the screen.
+
+It’s called Touch Bar, and you can twiddle the volume and brightness, but it changes depending on what apps you’re using. In Safari it’ll show your bookmarks and a search field, in Photos you can scrolls through pics. It looks fantastic, and frees up space on your display for other things.
+
+There’s auto-correction and it’ll show you suggested words, plus Touch ID finally comes to the MacBook Pro. An Apple T1 chip tucked inside the MacBook Pro lets you make purchases with security at the forefront.
+
+As it is multitouch enabled, you can scrub through videos without taking your finger of the bar.
+
+You’ll be able to buy a version of the MacBook Pro with or without the Touch Bar, but of course the MacBook Air doesn’t come with anything similar.
+
+Those longing for the return of the fabled 17-inch MacBook Pro should turn away, Apple’s biggest laptop display still stands at 15-inches. The new MacBook Pro comes in two sizes; 13-inch and 15-inch just like before.
+
+It also looks like a mash-up between the old MacBook Pro and the smaller MacBook, with the same butterfly mechanism for slimmer keys, a trackpad that’s twice as big and Force Touch enabled.
+
+The body is still constructed from aluminium and you certainly will be able to tell it is an Apple laptop. The 13-inch model is 17% thinner than the outgoing model, with 23% less volume, while the 15-inch is also 14% thinner with 20% less volume.
+
+The MacBook Air has become iconic, but maybe the tapered look is starting to feel dated. It hasn’t been freshened up in years and Apple leaving it alone once again feels like it’s the end.
+
+Nothing sums up its age more than the display. The 13-inch MacBook Air has a measly 1440 x 900 resolution panel, which pales when you compare it to Retina display on the MacBook Pro with 2650 x 1600 (13-inch) or 2880 x 1800 (15-inch) resolutions. The updated Pros also have 500 nits of brightness and display a wider colour gamut which makes is screen better in every way.
+
+As the ‘Pro’ in the name suggests, the MacBook Pro is aimed more at professionals while the Air sits as the choice for lighter users.
+
+Every 15-inch MacBook Pro comes with a quad-core 6th generation Skylake (not the latest 7th generation Kaby Lake chip) Intel Core i7 CPU with a Radeon Pro GPU that boasts the Polaris architecture. The SSDs are quicker, and there’s an advanced thermal architecture that should help funnel all that heat out of the thin body.
+
+The 13-inch version can be configured with either a dual-core Core i5 or i7 processor (again Skylake) and it once again has a much faster SSD, Intel Iris graphics and the advanced thermal architecture.
+
+These are far more powerful machines than the MacBook Airs, but that shouldn’t really come as a surprise. The Air starts with a 5th generation Core i5 and Intel HD Graphics 6000 GPU, with 8GB RAM and 128GB SSD. You can double that storage if you fancy, though.
+
+Both versions of the 13-inch MacBook Air come with 8GB RAM, while the MacBook Pros can be configured with either 8GB or 16GB RAM.
+
+Apple glossed over battery life on the new slew of MacBook Pros; simply saying they would all get 10-hours of mixed use. We’ll have to get them in for ourselves to see how well they really last.
+
+MacBook Airs tend to beat this figure, and Apple claims it should give you 12-hours of wireless web browsing and 30-days standby time and that's about right in our experience.
+
+Just like it did with the svelte 12-inch MacBook, the new slew of MacBooks are about USB-C.
+
+The MacBook Pro ditches the separate USB Type A and Thunderbolt ports and replaces them with four USB-C ports. These are compatible with Thunderbolt too, so all your displays will still work. Still, the change will likely be a pain to some, but we’re sure they’ll be lots of dongles available.
+
+The iconic MagSafe port is gone too, so you’ll be charging your laptop through USB-C. We’re going to miss that magnetic safety net, though. The SD card slot is another, somewhat painful, loss.
+
+Ah, now we get to the good stuff. In the space of an hour Apple’s cheapest laptop went from £749 (for the now KIA MacBook Air 11-inch) to £949 for the 13-inch MacBook Air. That’s a frankly outrageous price for a laptop this old. Want 256GB storage? You’re looking at £1,099.
+
+The new slew of MacBook Pros aren’t light of the wallet either, especially if you live in the UK. The non-Touch Bar toting Pro starts at £1449/$1499, while it jumps up to £1,749 for the base model with Touch Bar and Touch ID.
+
+If you want the 15-inch model you should pony up £2,349 for the 2.6GHz model with 256GB storage, while £2,699 gets you 512GB storage and a 2.7GHz processor.
+
+In short, Apple has all but eliminated good reasons to buy the MacBook Air. It's running old tech, the screen isn't great and the price hasn't dropped by much. But if your budget will only go as far as the MacBook Air, you definitely won't be able to afford any of the MacBook Pro models. Instead, we have a list of Windows-powered MacBook Air alternatives that might take your fancy.
